@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/Memo/Desktop/Web%20Page%20Design.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Level 3</title>
+    
+
+<style type="text/css">p1.fdiv {
+color: yellow;
+}
+p2.fdiv{
+color: red;
+}
+p3.fdiv{
+color: orange
+}
+div
+{
+   width:100px;
+   height:75px;
+   background-color:red;
+   border:1px solid black;
+}
+#div2
+{
+   transform:rotate(30deg);
+   -ms-transform:rotate(30deg); /* IE 9 */
+   -moz-transform:rotate(30deg); /* Firefox */
+   -webkit-transform:rotate(30deg); /* Safari and Chrome */
+   -o-transform:rotate(30deg); /* Opera */
+   background-color:yellow;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+
+    
+}
+
+.p {
+font-size: 25px;
+color:white
+}
+    .h {
+        display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+color:white
+    }
+    .c{
+        font-family: Consolas,"courier new";
+        color: crimson;
+    
+    padding-left: 4px;
+    padding-right: 4px;
+    }
+    body {
+  background-image: url('All.jpg');
+  
+  
+}
+hr {
+border: 3px solid white;
+}
+</style>
+
+	<form>
+<input type="submit" value="Home" formaction="Home.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-left: 1250px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+		<input type="submit" value="Log Out" formaction="start.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-left: 1050px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+        <input type="submit" value="Final Exam --->" formaction="final exam.html" style= "position: absolute; width: 17%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 18700px;
+        margin-left: 1130px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+</form>
+
+
+</head>
+<body>
+<img src="C++.png" class="center">
+    <br><br><br><br><br><br><br><br><br><br><br><br><hr><br>
+<h class="h" style=" color: yellow; margin left: auto; margin right: auto; text-align:center;"> PART 1: Function Declaration and Definition</h> <br><hr><br><br><br>
+    
+
+<h class="h">-  What is a function?</h>
+<br>
+<p class="p"> . A function is a block of code which only runs when it is called. <br>
+
+. You can pass data, known as parameters, into a function. <br>
+
+. Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times. </p>
+;
+    <br><br>
+    
+    <br><br>
+    <hr>
+<br> <br> <br>
+    
+    <h class="h"> - Function Declartion </h> 
+    
+    <p class="p"> . C++ provides some pre-defined functions, such as <code class="c">main()</code>, which is used to execute code. But you can also create your own functions to perform certain actions. <br>
+
+. To create (often referred to as declare) a function, specify the name of the function, followed by parentheses ():
+    </p>
+ <br>
+<p class="p"><strong>Syntax :</strong></p>
+
+    <p1 class="p fdiv"> void &nbsp;</p1> <p2 class="p fdiv"> myfunction() { </p2> <br>
+    <p3 class="p fdiv"> &nbsp; &nbsp;// code to be executed </p3> <br>
+    <p2 class="p fdiv">}</p2>
+    <br>
+    <br><br>
+    <p class="p"><strong> Example Explained :</strong></p>
+    <br>
+    <ul>
+        <li><p2 class="p fdiv"> myFunction() : &nbsp; </p2><p class="p"> is the name of the function</p></li>
+        <li><p1 class="p fdiv"> void : &nbsp; </p1><p class="p"> means that the function does not have a return value.</p></li>
+        <li><p class="p">inside the function (the body), add code that defines what the function should do </p></li>
+    </ul>
+    <br><br>
+    
+    <br><br>
+    <hr>
+<br> <br> <br>
+    <h class="h">- Call a Function</h> <br>
+    <p class="p">. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.<br>
+        . To call a function, write the function's name followed by two parentheses <p2 class="p fdiv">&nbsp;()&nbsp;</p2>and a semicolon <p2 class="p fdiv">&nbsp;;&nbsp;</p2>
+        <br>
+        . In the following example, <p2 class="p fdiv">&nbsp;myFunction()&nbsp;</p2>
+        is used to print a text (the action), when it is called: </p>
+
+<p class="p"><strong>Example :</strong></p>
+<p class="p fdiv"> Inside <p2 class="fdiv">&nbsp;main</p2>, call  <p2 class="fdiv">&nbsp;myFunction()</p2> :</p>
+<br>
+<p3 class=" p fdiv">// Create a function </p3><br> <br>
+
+<p1 class="p fdiv">void</p1><p2 class="p fdiv"> myFunction() { </p2> <br><br>
+ <p3 class=" p fdiv">cout &lt;&lt; "I just got executed!"; </p3> <br><br>
+<p2 class="p fdiv">}</p2> <br><br>
+
+<p1 class="p fdiv"> int </p1><p2 class="p fdiv"> main() {</p2> <br> <br>
+  <p2 class="p fdiv">myFunction();</p2> <p3 class=" p fdiv"> &nbsp; // call the function</p3> <br><br>
+  <p1 class="p fdiv">return</p1> <p2 class="p fdiv">&nbsp;0;<br>} <br></p2> <br>
+
+
+<p3 class=" p fdiv">// Outputs "I just got executed!"</p3><br>
+    <br>
+    <br><br><br><br>
+    <p class="p"> . A function can be called multiple times:</p>
+    <br><br><br>
+    <p class="p"><strong>Example :</strong></p>
+    
+   <p1 class="p fdiv">void</p1><p2 class="p fdiv"> myFunction() { </p2> <br><br>
+ <p3 class=" p fdiv">cout &lt;&lt; "I just got executed!"; </p3> <br><br>
+<p2 class="p fdiv">}</p2> <br><br>
+
+<p1 class="p fdiv"> int </p1><p2 class="p fdiv"> main() {</p2> <br> <br>
+  <p2 class="p fdiv">myFunction();</p2>
+<br>
+    <p2 class="p fdiv"> myFunction(); </p2> <br>
+    <p2 class="p fdiv"> myFunction();  </p2><br><br>
+  <p1 class="p fdiv">return</p1> <p2 class="p fdiv">&nbsp;0;<br>} <br></p2> <br>
+
+
+<p3 class=" p fdiv">// I just got executed!</p3><br>
+    <br>
+    <p3 class=" p fdiv">// I just got executed!</p3><br>
+    <br>
+    <p3 class=" p fdiv">// I just got executed!</p3><br>
+    <br>
+    
+     <br><br>
+    
+    <br><br>
+    <hr>
+<br> <br> <br>
+    <h class="h">- Function Declaration and Definition</h>
+    <br><br>
+    <p class="p"> A &nbsp; C++ function consist of two parts:</p>
+    <br>
+    <ul>
+        <li><p class="p"> <strong>Declaration:</strong> the function's name, return type, and parameters (if any)</p></li>
+              <li><p class="p"> <strong>Definition:</strong> the body of the function (code to be executed)</p></li>
+    </ul>
+        
+        <p1 class="p fdiv"> void &nbsp;</p1> <p2 class="p fdiv"> myfunction() { </p2> 
+    <p3 class="p fdiv"> &nbsp; &nbsp;// declaration </p3> <br>
+        <p3 class="p fdiv"> &nbsp; &nbsp; // the body of the function (definition) </p3> <br>
+    <p2 class="p fdiv">}</p2>
+    <br>
+    <br><br>
+    
+   <p class="p"> <p2 class="p fdiv"> !!</p2>NOTE<p2 class="p fdiv"> !! : </p2> </p><p class="p"> If a user-defined function, such as  <p2 class="p fdiv">myFunction()</p2> is declared after the  <p2 class="p fdiv">main()</p2> function, <p2 class="p fdiv">an error will occur.</p2> It is because C++ works from top to bottom; which means that if the function is not declared above <p2 class="p fdiv">main()</p2>, the program is unaware of it.</p>
+    
+    <br><br><br>
+    <p class="p">. However, it is possible to separate the declaration and the definition of the function  for code optimization. <br> . You will often see C++ programs that have function declaration above <p2 class="p fdiv">main()</p2>, and function definition below <p2 class="p fdiv">main()</p2>. This will make the code better organized and easier to read:</p>
+    <br><br><br>
+                                                      
+
+
+
+<p class="p"><strong>Example :</strong></p>
+<br><br><b>
+    <p3 class="p fdiv"> // Function declaration</p3><br><br>
+    <p1 class="p fdiv">void</p1> <p2 class="p fdiv">myFunction();</p2><br><br>
+
+    <p3 class="p fdiv">// The main method</p3> <br><br>
+    <p1 class="p fdiv">int</p1> <p2 class="p fdiv">main() {<br><br>
+    myFunction();</p2>  <p3 class="p fdiv">&nbsp; &nbsp; &nbsp;// call the function </p3> <br><br>
+    <p1 class="p fdiv">return</p1> <p2 class="p fdiv">0; <br> }</p2>
+<br><br>
+
+    <p3 class="p fdiv">// Function definition</p3> <br><br>
+    <p1 class="p fdiv">void</p1><p2 class="p fdiv"> myFunction() {</p2><br>
+    <p3 class="p fdiv">cout &lt;&lt; "I just got executed!";</p3><br><br>
+<p2 class="p fdiv">}</p2></b><br> <br><br>
+    <div3>
+<p class="p"> <strong> Quiz 1:</strong><br><br>
+    What is the output of the following code ? </p>
+    <br><br><br>
+    <p1 class="p fdiv">void</p1> <p2 class="p fdiv">myFunction();</p2><br><br>
+
+    
+    <p1 class="p fdiv">int</p1> <p2 class="p fdiv">main() {<br><br>
+    myFunction();</p2>   <br><br>
+    <p1 class="p fdiv">return</p1> <p2 class="p fdiv">0; <br> }</p2>
+<br><br>
+
+    <br><br>
+    <p1 class="p fdiv">void</p1><p2 class="p fdiv"> myFunction() {</p2><br>
+    <p3 class="p fdiv">cout &lt;&lt; 5 + 2;</p3><br><br>
+<p2 class="p fdiv">}</p2><br><br><br>
+    <p class="p"> Please Choose the correct answer: </p> <br>
+    <form name="quiz1" onsubmit="checkanswerq1();return false">
+        <input type="radio" name="answer" value="5 + 2"> <p3 class="p fdiv"> 5 + 2</p3><br>
+        <input type="radio" name="answer" value="7"> <p3 class="p fdiv"> 7 </p3><br>
+        <input type="radio" name="answer" value="error"> <p3 class="p fdiv">error</p3> <br><br><br>
+        <input type="submit" value="Submit Answer">
+</form>
+<script type="text/javascript">
+        function checkanswerq1()
+        {
+var ans1 = document.getElementsByName("answer");
+            if (ans1[1].checked != true )
+            {
+                alert("Wrong answer!");
+            }
+            else{
+alert ( "Correct ! , Well done");
+}
+                     
+        }
+ 
+</script>
+    </div3>
+    <br><br><br><br><br><br><br><br><br><br><br><br><hr><br>
+<h class="h" style=" color: yellow; margin left: auto; margin right: auto; text-align:center;"> PART 2: Function Parameters</h> <br><hr><br><br><br>
+    <h class="h"> - Parameters and Arguments</h> <br><br>
+    <p class="p">. Information can be passed to functions as a parameter. Parameters act as variables inside the function.<br>. Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma: <br><br><strong>Syntax : </strong> <br><br><br>
+        <p1 class="p fdiv"> void &nbsp;</p1> <p2 class="p fdiv"> functionName(  </p2><p3 class="p fdiv">parameter1, parameter2, parameter3</p3>
+        <p2 class="p fdiv">) {</p2>
+        <br>
+    <p3 class="p fdiv"> &nbsp; &nbsp;// code to be executed </p3> <br>
+    <p2 class="p fdiv">}</p2>
+    <br>
+    <br><br>
+        . The following example has a function that takes a <p2 class="p fdiv">string</p2> called <strong>fname</strong> as parameter. When the function is called, we pass along a first name, which is used inside the function to print the full name:<br><br><br<br></br<br></p>
+        <br><br><br><br><br>
+<div4>
+    <p class="p"><strong>Example</strong><br><br><br>
+        <p1 class="p fdiv">void</p1>  <p2 class="p fdiv">myFunction(</p2> <p3 class="p fdiv">string fname</p3>  <p2 class="p fdiv">) { </p2><br>
+        <p3 class="p fdiv">cout &lt;&lt; fname &lt;&lt; " Refsnes\n";</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+        myFunction( <p3 class="p fdiv">"Liam"</p3>);<br>
+        myFunction( <p3 class="p fdiv">"Jenny"</p3>);<br>
+        myFunction( <p3 class="p fdiv">"Anja"</p3>);<br></p2>
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>
+        }</p2><br><br><br>
+
+ <p1 class="p fdiv">// Liam Refsnes<br>
+// Jenny Refsnes<br>
+// Anja Refsnes</p1> <br><br><br><strong>NOTE: </strong>When a<strong> parameter </strong>is passed to the function, it is called an <strong>argument</strong>. So, from the example above: <p2 class="p fdiv">fname </p2> is a <strong>parameter</strong>, while <p2 class="p fdiv"> Liam, Jenny</p2> and <p2 class="p fdiv"> Anja </p2>are <strong>arguments</strong>.
+
+<br><br><br></p></div4><br><hr><br><br>
+<h class="h"> - Default Parameter Value</h>
+<p class="p">. You can also use a default parameter value, by using the equals sign (<p2 class="p fdiv">=</p2>).<br>. If we call the function without an argument, it uses the default value ("Norway"):</p><br><br>
+<br><br><div5><p class="p">
+<strong>Example</strong><br><br><br>
+        <p1 class="p fdiv">void</p1>  <p2 class="p fdiv">myFunction(</p2> <p3 class="p fdiv">string country = "Norway"</p3> ) <p2 class="p fdiv">{ </p2><br>
+        <p3 class="p fdiv">cout &lt;&lt; country &lt;&lt; "\n";</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+        myFunction( <p3 class="p fdiv">"Sweden"</p3>);<br>
+        myFunction( <p3 class="p fdiv">"India"</p3>);<br>
+    myFunction();<br>
+        myFunction( <p3 class="p fdiv">"USA"</p3>);<br></p2>
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    <p3 class="p fdiv"> // Sweden<br>
+        // India<br>
+        // Norway<br>
+        // USA<br></p3> <br><br><br>
+    
+    <strong>NOTE: </strong> A parameter with a default value, is often known as an "<strong>optional parameter</strong>". From the example above,<p2 class="p fdiv"> country </p2>is an optional parameter and <p2 class=" p fdiv">"Norway"</p2> is the default value.<br><br>
+    
+    
+    
+    </p></div5>
+
+<br><br><br><hr> <br><br><br>
+<h class="h"> - Multiple Parameters</h> <br><br>
+<p class="p"> . Inside the function, you can add as many parameters as you want:</p><br><br><br>
+<div6>
+    <p class="p">
+<strong>Example</strong><br><br><br>
+        <p1 class="p fdiv">void</p1>  <p2 class="p fdiv">myFunction(</p2> <p3 class="p fdiv">string fname, int age</p3>  <p2 class="p fdiv">) { </p2><br>
+        <p3 class="p fdiv">cout &lt;&lt; fname &lt;&lt; " Refsnes. " &lt;&lt; age &lt;&lt; " years old. \n";</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+        myFunction( <p3 class="p fdiv">"Liam", 3</p3>);<br>
+        myFunction( <p3 class="p fdiv">"Jenny", 14</p3>);<br>
+  
+        myFunction( <p3 class="p fdiv">"Anja", 30</p3>);<br></p2>
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    <p3 class="p fdiv"> // Liam Refsnes. 3 years old.<br>
+        // Jenny Refsnes. 14 years old.<br>
+        // Anja Refsnes. 30 years old.<br>
+        </p3> <br><br><br>
+    
+    <strong>NOTE: </strong> Note that when you are working with multiple parameters, the function call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.<br><br></p></div6>
+<br><br><br><br>
+<hr><br><br><br>
+<h class="h"> - Return Values</h>
+<br><br>
+<p class="p">. The <p1 class="p fdiv"> void </p1>  keyword, used in the previous examples, indicates that the function should not return a value. If you want the function to return a value, you can use a data type (such as <p1 class="p fdiv"> int, string, etc. </p1>) instead of   <p1 class="p fdiv"> void </p1>, and use the <p1 class="p fdiv"> return  </p1>  keyword inside the function: <br><br><br>
+    <div7>
+    </div7></p><p class="p">
+<strong>Example</strong><br><br><br>
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">myFunction(</p2> <p3 class="p fdiv">int x</p3><p2 class="p fdiv">) { </p2><br>
+        <p1 class="p fdiv">return</p1> 
+        <p3 class="p fdiv">5 + x;</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+       <p3 class="p fdiv">cout &lt;&lt; </p3>  myFunction( <p3 class="p fdiv">3</p3>);<br>
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    <p3 class="p fdiv"> // // Outputs 8 (5 + 3)<br>
+       </p3> <br><br><br>
+        </p2></p>
+    
+
+<br><br><br><p class="p">
+. You can also store the result in a variable: <br><br><br>
+                                      <strong> Example</strong></p><br><br><br>
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">myFunction(</p2> <p3 class="p fdiv">int x, int y</p3><p2 class="p fdiv">) { </p2><br>
+        <p1 class="p fdiv">return</p1> 
+        <p3 class="p fdiv">x + y;</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+       <p3 class="p fdiv">int z = </p3>  myFunction( <p3 class="p fdiv">5, 3</p3>);<br>
+            <p3 class="p fdiv">cout &lt;&lt; z; </p3> <br>
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    <p3 class="p fdiv"> // // Outputs 8 (5 + 3)<br>
+       </p3> <br><br><br>
+        </p2>
+
+<p></p>
+<br><br><br><br><hr><br><br><br><br>
+<h class="h"> - Pass By Reference</h><br><br><br>
+<p class="p"> . In the examples from the previous page, we used normal variables when we passed parameters to a function. You can also pass a reference to the function. This can be useful when you need to change the value of the arguments: <br><br><br><div7.2>
+
+      <strong> Example</strong><br><br><br>
+        <p1 class="p fdiv">void</p1>  <p2 class="p fdiv">swapNums(</p2> <p3 class="p fdiv">int x, int &amp;y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">int z = x;<br> x = y;<br> y = z;<br></p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+       <p3 class="p fdiv"> int firstNum = 10; <br> int secondNum = 20; <br><br> cout &lt;&lt; "Before swap: " &lt;&lt; "\n";<br> cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n"; <br> <br> // Call the function, which will change the values of firstNum and secondNum <br>  </p3>  swapNums( <p3 class="p fdiv">firstNum, secondNum</p3>);<br>
+            <p3 class="p fdiv">cout &lt;&lt; "After swap: " &lt;&lt; "\n"; <br> cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";  </p3> <br><br>
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    <p3 class="p fdiv">// outputs:<br>Before swap: <br>
+1020<br>
+After swap:<br>
+2010<br>
+       </p3> <br><br><br>
+        </p2>
+ 
+
+</div7.2></p>
+    
+<div8>
+    <p class="p"> <strong> Quiz 2:</strong><br><br>
+    What is the output of the following code ? </p>
+    <br><br><br>
+    <p3 class="p fdiv">#include &lt; </p3><p3 class="p fdiv">iostream&gt;</p3>
+<br>
+<p3 class="p fdiv">using namespace std;</p3> <br><br><br>
+
+        <p1 class="p fdiv">void</p1>  <p2 class="p fdiv">swapNums(</p2> <p3 class="p fdiv">int x, int &amp;y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">int z = x;<br> x = y;<br> y = z;<br></p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+       <p3 class="p fdiv"> int firstNum = 10; <br> int secondNum = 20; <br><br> cout &lt;&lt; "Before swap: " &lt;&lt; "\n";<br> cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n"; <br> <br> <br>  </p3>  swapNums( <p3 class="p fdiv">firstNum, secondNum</p3>);<br>
+            <p3 class="p fdiv">cout &lt;&lt; "After swap: " &lt;&lt; "\n"; <br> cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; "\n";  </p3> <br><br>
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br><br><br><br>
+    <p class="p"> Please Choose the correct answer: </p> <br>
+    <form name="quiz2" onsubmit="checkanswerq2();return false">
+        <input type="radio" name="answer2" value="2010"> <p3 class="p fdiv"> 2010</p3><br>
+    
+            
+        <input type="radio" name="answer2" value="1010"><p3 class="p fdiv"> 1010 </p3><br>
+        <input type="radio" name="answer2" value="error"> <p3 class="p fdiv">error</p3> <br><br><br>
+        <input type="submit" value="Submit Answer">
+</form>
+<script type="text/javascript">
+    function checkanswerq2()
+        {
+var ans2 = document.getElementsByName("answer2");
+            if (ans2[1].checked != true )
+            {
+                alert("Wrong answer!");
+            }
+            else{
+alert ( "Correct ! , Well done");
+}
+                     
+        }
+</script>
+    </p2></div8>
+<br><br><br><br><br><br><br>  <br> <br><br><br><br>  <hr><br>
+<h class="h" style=" color: yellow; margin left: auto; margin right: auto; text-align:center;"> PART 3: Function Overloading</h><br><hr>
+<br><br><br><h class="h"> - Function Overloading</h>
+
+<p class="p"> . With<strong> function </strong> overloading, multiple functions can have the same name with different parameters:
+    <br><br><br>
+    <strong>Example</strong>
+    <br><br><br>
+    <p1 class="p fdiv"> int</p1>  <p2 class="p fdiv"> myFunction(</p2> <p3 class="p fdiv"> int x</p3> <p2 class="p fdiv"> )</p2><br> <p1 class="p fdiv"> float</p1>  <p2 class="p fdiv"> myFunction(</p2> <p3 class="p fdiv"> float x</p3> <p2 class="p fdiv"> )</p2><br><p1 class="p fdiv"> double</p1>  <p2 class="p fdiv"> myFunction(</p2> <p3 class="p fdiv"> double x, double y</p3> <p2 class="p fdiv"> )</p2> <br><br><br>
+. Consider the following example, which have two functions that add numbers of different type: <br><br><br>
+<div9>
+    
+      <strong> Example</strong><br><br><br>
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">plusFuncInt(</p2> <p3 class="p fdiv">int x, int y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">return x + y;<br></p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+    
+     <p1 class="p fdiv">double</p1>  <p2 class="p fdiv">plusFuncDouble(</p2> <p3 class="p fdiv">double x, double y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">return x + y;</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+    <p3 class="p fdiv"> int myNum1 = <p2 class="p fdiv">  plusFuncInt(</p2> 8, 5 <p2 class="p fdiv"> )</p2> ; <br>
+double myNum2 = <p2 class="p fdiv">plusFuncDouble(</p2>4.3, 6.26<p2 class="p fdiv">)</p2>; <br>    cout &lt;&lt; "Int: " &lt;&lt; myNum1 &lt;&lt; "\n";<br> cout &lt;&lt; "Double: " &lt;&lt; myNum2; <br> <br> 
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    </p3></p2>
+<p3 class="p fdiv">// outputs:<br>Int: 13 <br>
+Double: 10.56 <br>
+       </p3><br><br><br><br></div9>
+
+. Instead of defining two functions that should do the same thing, it is better to overload one.<br>
+
+. In the example below, we overload the  <p2 class="p fdiv">plusFunc</p2> function to work for both <p1 class="p fdiv">int</p1> and <p1 class="p fdiv">double</p1>
+<br><br><br><div10>
+    
+      <strong> Example</strong><br><br><br>
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">plusFunc(</p2> <p3 class="p fdiv">int x, int y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">return x + y;<br></p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+    
+     <p1 class="p fdiv">double</p1>  <p2 class="p fdiv">plusFunc(</p2> <p3 class="p fdiv">double x, double y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">return x + y;</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+    <p3 class="p fdiv"> int myNum1 = <p2 class="p fdiv">  plusFunc(</p2> 8, 5 <p2 class="p fdiv"> )</p2>; <br>double myNum2 =<p2 class="p fdiv">  plusFunc(</p2> 4.3, 6.26<p2 class="p fdiv"> )</p2>; <br> <br>    cout &lt;&lt; "Int: " &lt;&lt; myNum1 &lt;&lt; "\n";<br> cout &lt;&lt; "Double: " &lt;&lt; myNum2; <br> <br> 
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    </p3></p2>
+<p3 class="p fdiv">// outputs:<br>Int: 13 <br>
+Double: 10.56 <br>
+    </p3><br><br><br><br>
+
+<strong>NOTE :</strong> Multiple functions can have the same name as long as the number and/or type of parameters are different.
+</div10> <br><br><br>
+
+<div11>
+    Quiz 3 : <br><br>
+    What is the output of the following code ? 
+
+<strong> Example</strong><br><br><br>
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">plusFunc(</p2> <p3 class="p fdiv">int x, int y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv"> x-= 3; <br> return x + y;<br></p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+    
+     <p1 class="p fdiv">double</p1>  <p2 class="p fdiv">plusFunc(</p2> <p3 class="p fdiv">double x, double y</p3><p2 class="p fdiv">) { </p2><br>
+         
+        <p3 class="p fdiv">return x + y;</p3><br>
+        <p2 class="p fdiv">}</p2><br><br><br>
+
+        <p1 class="p fdiv">int</p1>  <p2 class="p fdiv">main() {<br>
+    <p3 class="p fdiv"> int myNum1 = <p2 class="p fdiv">  plusFunc(</p2> 8, 5 <p2 class="p fdiv"> )</p2>; <br>double myNum2 =<p2 class="p fdiv">  plusFunc(</p2> 4.3, 6.26<p2 class="p fdiv"> )</p2>; <br> <br>    cout &lt;&lt; "Int: " &lt;&lt; myNum1 &lt;&lt; "\n";<br> cout &lt;&lt; "Double: " &lt;&lt; myNum2; <br> <br> 
+       
+        <p1 class="p fdiv">return</p1>  <p2 class="p fdiv">0;<br>}</p2><br><br><br>
+    </p3></p2><br><br><br>
+     Please Choose the correct answer:  <br>
+    </div11></p>
+    <form name="quiz3" onsubmit="checkanswerq3();return false">
+        <input type="radio" name="answer3" value="13 10.56"> <p3 class="p fdiv"> 13 <br> &nbsp;&nbsp;&nbsp; 10.56</p3><br>      
+        <input type="radio" name="answer3" value="10 10.56"> <p3 class="p fdiv"> 10 <br> &nbsp;&nbsp;&nbsp;&nbsp;10.56 </p3><br>
+        <input type="radio" name="answer3" value="error">  <p3 class="p fdiv">  error</p3> <br><br><br>
+        <input type="submit" value="Submit Answer">
+</form>
+<script type="text/javascript">
+    function checkanswerq3()
+        {
+var ans3 = document.getElementsByName("answer3");
+            if (ans3[1].checked != true )
+            {
+                alert("Wrong answer!");
+            }
+            else{
+alert ( "Correct ! , Well done");
+}
+                     
+        }
+</script>
+    
+
+    
+
+</body></html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" >
+  var emails = new Array("maria@gmail.com" , "mayve@gmail.com", "andre@gmail.com","mina@gmail.com");
+     var passwords = new Array("maria" , "mayve", "andre","mina");
+   function info(){
+       emails[0] = document.forms[1].elements[0].value;
+       localStorage.setItem("first_value",emails[0]);
+       return false;
+      }
+      function info2(){
+        emails[1] = document.forms[2].elements[0].value;
+       localStorage.setItem("second_value",emails[1]);
+       return false
+      }
+      function info3(){
+        emails[2] = document.forms[3].elements[0].value;
+       localStorage.setItem("third_value",emails[2]);
+      return false;
+      }
+      function info4(){
+       emails[3] = document.forms[4].elements[0].value;
+       localStorage.setItem("fourth_value",emails[3]);
+       return false ;
+      }
+       function info5(){
+       var question1 = document.forms[5].elements[0].value;
+       localStorage.setItem("fifth_value",question1);
+       return false ;
+      }
+      function info6(){
+       var question2 = document.forms[6].elements[0].value;
+       localStorage.setItem("sixth_value",question2);
+       return false ;
+      }
+      function info7(){
+       var question3 = document.forms[7].elements[0].value;
+       localStorage.setItem("seventh_value",question3);
+       return false ;
+      }
+</script>
+<head>
+  <title></title>
+</head>
+<body >
+<div>
+   <form style="background-color:green; height:100px;">
+    <img src="Head.jpg" style="float: left;" > 
+<input type="submit" value="Home" formaction="Home.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 40px;
+        margin-left: 1250px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+    <input type="submit" value="Log Out" formaction="start.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 40px;
+        margin-left: 1050px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+</form>
+</div>
+<div class="left">
+  <p><b>Content:<b> </p>
+  <ol >
+    <li style="margin: 20px;">
+      <b>Manage users <b>
+    </li>
+    <li style="margin: 20px;">
+      <b>Manage quizzes<b>
+    </li>
+  </ol>
+</div>
+<div style="width: 80%; float: right;">
+      <table>
+      <tr>
+        <th>
+          User's Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    <tr>
+      <td colspan="2">
+        <p><hr></p>
+      </td>
+    </tr>
+    <tr>
+    <form onsubmit="return info()" class="right">
+      <td>
+    <input type="text" name="name" id="mytext"  <span id="first_email"  > </span> 
+     <script>
+         if (localStorage.getItem("first_value")!== null){
+        document.getElementById('mytext').value = localStorage.getItem("first_value");}
+        else{
+          document.getElementById('mytext').value = "maria@gmail.com";
+        }
+      </script>
+    </td>
+    <td>
+      <input type="submit" value="save changes" class="button">
+    </td>
+     </form>
+     <p><br></p>
+    </tr>
+    <tr>
+     <form onsubmit="return info2()" class="right">
+      <td>
+    <input type="text" name="name" id="mytext2" <span id="second_email"> </span> 
+      <script>
+         if (localStorage.getItem("second_value")!== null){
+        document.getElementById('mytext2').value = localStorage.getItem("second_value");}
+        else{
+          document.getElementById('mytext2').value ="mayve@gmail.com";
+        }
+      </script>
+    </td>
+    <td>
+      <input type="submit" value="save changes" class="button">
+    </td>
+     </form>
+      <p><br></p>
+    </tr>
+     <tr>
+     <form onsubmit="return info3()" class="right">
+     <td>    <input type="text" name="name" id="mytext3" <span id="third_email" > </span> 
+      <script>
+        if (localStorage.getItem("third_value")!== null){
+        document.getElementById('mytext3').value = localStorage.getItem("third_value");
+      }
+      else{
+        document.getElementById('mytext3').value ="andre@gmail.com";
+      }
+      </script>
+    </td>
+    <td>
+      <input type="submit" value="save changes" class="button">
+    </td>
+     </form>
+      <p><br></p>
+    </tr>
+     <tr>
+     <form onsubmit="return info4()" class="right">
+      <td>
+    <input type="text" name="name" id="mytext4" <span id="fourth_email" > </span> 
+      <script>
+        if (localStorage.getItem("fourth_value")!== null){
+        document.getElementById('mytext4').value = localStorage.getItem("fourth_value");}
+        else{
+          document.getElementById('mytext4').value = "mina@gmail.com";
+        }
+      </script>
+    </td>
+    <td>
+      <input type="submit" value="save changes" class="button">
+    </td>
+     </form>
+      <p><br></p>
+    </tr>
+     </table>
+     <p style="font-size: 35px; text-align:center; margin-top:30px "> <b>Quiz</b></p>
+  <table>
+    <tr>
+      <th>
+        Quesion
+      </th>
+      <th>
+        Action
+      </th>
+    </tr>
+     <tr>
+      <td colspan="2">
+        <p><hr></p>
+      </td>
+    </tr>
+    <tr>
+      <form onsubmit="return info5()" class="right">
+        <td>
+      <input type="text" id="question1" <span > </span>
+      <script type="text/javascript">
+        if (localStorage.getItem("fifth_value")!== null){
+        document.getElementById('question1').value = localStorage.getItem("fifth_value");}
+        else{
+          document.getElementById('question1').value = "Now can you print all numbers from 1 to 9?";
+        }
+      </script></td>
+      <td>
+      <input type="submit" value="save changes" class="button"></td>
+      </form>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>
+        Answer
+      </th>
+      <th>
+        Action
+      </th>
+    </tr>
+ <tr>
+      <td colspan="2">
+        <p><hr></p>
+      </td>
+    </tr>
+     <tr>
+      <form onsubmit="return info6()" class="right" class="button">
+        <td>
+      <input type="text" id="question2" <span > </span>
+      <script type="text/javascript">
+        if (localStorage.getItem("sixth_value")!== null){
+        document.getElementById('question2').value = localStorage.getItem("sixth_value");}
+        else{
+          document.getElementById('question2').value = "int x =1;<br>while (x&lt;=9){<br> cout &lt;&lt; x &lt;&lt; endl ; <br> x++; <br>} <br> ";
+        }
+      </script></td>
+      <td>
+      <input type="submit" value="save changes" class="button"></td>
+      </form>
+    </tr>
+    <tr>
+      <form onsubmit="return info7()" class="right">
+        <td>
+      <input type="text" id="question3" <span > </span>
+       <script type="text/javascript">
+        if (localStorage.getItem("seventh_value")!== null){
+        document.getElementById('question3').value = localStorage.getItem("seventh_value");}
+        else{
+          document.getElementById('question3').value = "int x =1;<br> while (x&lt;=9){<br> cout &lt;&lt; x &lt;&lt; endl ; <br> }<br> <br> ";
+        }
+      </script></td>
+      <td>
+      <input type="submit" value="save changes" class="button"></td>
+      </form>
+    </tr>
+  </table>
+</div>
+</body>
+ <style>
+ #question1{
+  width: 500px;
+ }
+ #question2{
+  width: 500px;
+ }
+ #question3{
+  width: 500px;
+ }
+
+table {
+  width: 100%;
+   padding: 12px 10px;
+}
+  input{
+           width: 80%;
+           padding: 12px 0px ;
+           margin-top: 40px;
+           border: 1px solid #999;
+           background:transparent;
+      }
+         .button{
+          width: auto;
+        background: linear-gradient(to right,#7FE174,#36E321);
+        color:white;
+        float: center;
+        padding: 10px 30px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+      }
+      th{
+        font-size: 30px;
+      }
+      .left {
+        width: 20%;
+        padding-top: 2%;
+        padding-bottom: 98%;
+        float: left;
+        background-color: green;
+        color: black;
+        font-size: 30px; 
+      }
+</style>
+</html>

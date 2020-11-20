@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+ 
+// login javaScript
+function validation (){
+     var emails = new Array("maria@gmail.com" , "mayve@gmail.com", "andre@gmail.com","mina@gmail.com");
+     var passwords = new Array("maria" , "mayve", "andre","mina");
+       if (localStorage.getItem("first_value") !== null){
+       emails[0] = localStorage.getItem("first_value");}
+
+       if (localStorage.getItem("second_value")!==null){
+        emails[1] = localStorage.getItem("second_value");}
+
+        if (localStorage.getItem("third_value") !== null){
+         emails[2] = localStorage.getItem("third_value");}
+
+         if ( localStorage.getItem("fourth_value")!==null){
+         emails[3] = localStorage.getItem("fourth_value");}
+       var valid = true;
+       var email = document.forms[0].elements[0].value;
+       var password = document.forms[0].elements[1].value;
+       if (email == "") {
+                alert("Enter your email");
+                document.inputForm.emaill.focus();
+                 valid = false;
+            }
+
+       else if (password == "" ){
+            alert ("Enter your password");   
+            document.inputForm.password.focus();
+             valid = false;
+       }
+
+       else if(document.inputForm.emaill.value.indexOf("@")==-1||document.inputForm.emaill.value.indexOf(".")==-1){
+          document.inputForm.emaill.focus();
+           alert("Please Enter valid email, e.g:info@yahoo.com");
+          valid = false;
+        }
+        else{
+           
+                if (email == emails[0] ){
+                  if (password== passwords[0]){
+                     window.open("admin.html");
+                   window.close(); 
+                      valid = true;
+          }
+               }
+
+         else if (email == emails[1] ){
+                  if (password== passwords[1]){
+                     window.open("admin.html");
+                   window.close();
+                   
+                      valid = true;
+          }
+               }
+
+         else if (email == emails[2] ){
+                  if (password== passwords[2]){
+                     window.open("Home.html");
+                   window.close();
+                   
+                      valid = true;
+          }
+               }
+
+         else if (email == emails[3] ){
+                  if (password== passwords[3]){
+                     window.open("Home.html");
+                   window.close();
+                
+                      valid = true;
+          }
+               }
+               else{
+                alert ("Wrong email or password");
+                valid=false;
+               }
+               
+            }    
+      return valid;
+    }
+</script> 
+
+<BODY>
+<div class="form">
+ <h1>Login </h1>
+ <p> <hr> </p>
+ <form name= "inputForm" onsubmit="return validation()" >
+<img src="images.jpg">
+<input type="text" name="emaill" id="emaill" placeholder="Email" class="text1" /> 
+<br>
+<br>   
+<img src="download.png"> 
+<input type="password" name="passwordd" id="passwordd" placeholder="Password" class="text2" /> 
+<br>
+<br>
+<input type="submit" value="LOGIN" class="button" />
+</form>
+</div>
+</BODY>
+<style type="text/css">
+     h1{
+      text-align:center; 
+      color: #56E446;
+     }
+     p{
+      width: 30%;
+      margin-right: 30%;
+      margin-left: 30%;
+     }
+     img{
+      float: left;
+       margin-top: 40px;
+       margin-right: 15px;
+     }
+      .button{
+        width: 85%;
+        background: linear-gradient(to right,#7FE174,#36E321);
+        color:white;
+        padding: 10px 30px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+      }
+      .text1{
+           width: 80%;
+           padding: 12px 0px ;
+           margin-top: 40px;
+           border-bottom: 1px solid #999;
+           border-right: 0px;
+           border-left: 0px;
+           border-top:0px;
+           background:transparent;
+      }
+       .text2{
+           width: 80%;
+           margin-top: 20px;
+           padding: 12px 0px ;
+           margin-top: 40px;
+           border-bottom: 1px solid #999;
+           border-right: 0px;
+           border-left: 0px;
+           border-top:0px;
+           background:transparent;
+      }
+      .form {
+        width:30%; 
+        height: 70%;   
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px;
+        margin-right:35%;
+        margin-left: 35%;
+        margin-top: 7%;
+      }
+      body{ 
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Home.jpg');
+            background-color: #cccccc; /* Used if the image is unavailable */
+      }
+</style>
+</HTML>

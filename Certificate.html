@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Congratulations!!</title>
+</head>
+<body>
+  <div>
+  	<p id = "name" style="padding-top: 20%; padding-left: 20%;">
+  	 </p>
+  	 <br>
+     <p id="final" style="padding-top: 23%; padding-left: 25%; font-weight: bold; "> </p>
+     <p style="padding-top: 23%; padding-left: 28%; font-weight: bold; ">/10</p>
+  	 <script type="text/javascript">
+  	 	 document.getElementById('name').innerHTML = localStorage.getItem("save_name");
+  	 	 document.getElementById('final').innerHTML = localStorage.getItem("Final");
+  	 </script>
+  </div>
+</body>
+<style type="text/css">
+	body{
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Home.jpg');
+	}
+	div{
+		width: 900px;
+		height: 646px;
+		margin: auto;
+		background:  url('Certificate.png');
+		background-repeat: no-repeat;
+	}
+	p{
+		text-align:center;
+		font-size: 70px;
+		font-family: edwardian script itc; 
+		position: absolute;
+	}
+</style>
+</html>

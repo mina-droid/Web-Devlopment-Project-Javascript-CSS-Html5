@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Level 1</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+function  check1(){
+        if (document.getElementById('reading1').checked){
+           	if (document.getElementById('reading2').checked){
+           		 alert("Wrong answer");
+                document.getElementById('reading1').checked = 0 ;
+               document.getElementById('reading2').checked = 0 ;
+           	}
+           	else{
+      	    alert("True answer");
+             document.getElementById('reading1').checked = 0 ;
+               document.getElementById('reading2').checked = 0 ;
+         	}
+        }
+        else{
+          alert("Wrong answer");
+           document.getElementById('reading1').checked = 0 ;
+               document.getElementById('reading2').checked = 0 ;
+        }
+        return false;
+	}   
+function  check2(){
+        if (document.getElementById('reading3').checked){
+           	if (document.getElementById('reading4').checked){
+           		 alert("Wrong answer");
+                document.getElementById('reading4').checked = 0 ;
+               document.getElementById('reading3').checked = 0 ;
+           	}
+           	else{
+      	    alert("True answer");
+             document.getElementById('reading4').checked = 0 ;
+               document.getElementById('reading3').checked = 0 ;
+         	}
+        }
+        else{
+          alert("Wrong answer");
+           document.getElementById('reading3').checked = 0 ;
+               document.getElementById('reading4').checked = 0 ;
+        }
+        return false;
+	}    
+function  check3(){
+        if (document.getElementById('reading5').checked){
+           	if (document.getElementById('reading6').checked){
+           		 alert("Wrong answer");
+                document.getElementById('reading5').checked = 0 ;
+               document.getElementById('reading6').checked = 0 ;
+           	}
+           	else{
+      	    alert("True answer");
+             document.getElementById('reading5').checked = 0 ;
+               document.getElementById('reading6').checked = 0 ;
+         	}
+        }
+        else{
+          alert("Wrong answer");
+           document.getElementById('reading5').checked = 0 ;
+               document.getElementById('reading6').checked = 0 ;
+        }
+        return false;
+	}  
+function  check4(){
+        if (document.getElementById('reading7').checked){
+           	if (document.getElementById('reading8').checked){
+           		 alert("Wrong answer");
+                document.getElementById('reading7').checked = 0 ;
+               document.getElementById('reading8').checked = 0 ;
+           	}
+           	else{
+      	    alert("True answer");
+             document.getElementById('reading7').checked = 0 ;
+               document.getElementById('reading8').checked = 0 ;
+         	}
+        }
+        else{
+          alert("Wrong answer");
+           document.getElementById('reading7').checked = 0 ;
+               document.getElementById('reading8').checked = 0 ;
+        }
+        return false;
+	}    
+	
+
+</script>
+
+</head>
+<body>
+<form>
+<input type="submit" value="Home" formaction="Home.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-left: 1250px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+		<input type="submit" value="Log Out" formaction="start.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-left: 1050px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+        <input type="submit" value="Level 2 --->" formaction="Level2.html" style= "position: absolute; width: 17%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 9300px;
+        margin-left: 1130px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+</form>
+
+<h1 style="color:white;text-align:center;font-size:40px">Welcome To C++ Tutorial</h1>
+<aside>
+<h2>tutorial content</h2>
+<p>Syntax<br>Variables and Data Types<br>Operators<br>Conditions<br>Loops<br>Switch Case<br>Arrays<br>Functions<br></p>
+</aside>
+<main>
+<article>
+<h1>C++ introduction</h1>
+<p> C++ is a cross-platform language that can be used to create high-performance applications.<br>
+C++ was developed by Bjarne Stroustrup, as an extension to the C language.<br>
+C++ gives programmers a high level of control over system resources and memory.<br>
+The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.</p>
+</article>
+<article>
+<h1>1-C++ syntax</h1>
+<h2>Example</h2>
+<bdi>
+<p style="color: yellow"> 1 #include
+ <
+ iostream>
+  <br></p>
+2 using namespace std;<br>
+3 <br>
+4 int main() {<br>
+5  cout << "Hello World!";<br>
+6 return 0;<br>
+7 }
+</bdi>
+<h3>Example explained</h3>
+<p>Line 1: #include <iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.<br>
+Line 2: using namespace std means that we can use names for objects and variables from the standard library.<br>
+Line 3: A blank line. C++ ignores white space.<br>
+Line 4: Another thing that always appear in a C++ program, is int main(). This is called a function. Any code inside its curly brackets {} will be executed.<br>
+Line 5: cout (pronounced "see-out") is an object used together with the insertion operator  to output/print text. In our example it will output "Hello World".<br>
+Note: Every C++ statement ends with a semicolon ;.<br>
+Note: The body of int main() could also been written as:<br>
+int main () { cout << "Hello World! "; <br>
+return 0; }<br>
+Remember: The compiler ignores white spaces. However, multiple lines makes the code more readable.<br>
+Line 6: return 0 ends the main function.<br>
+Line 7: Do not forget to add the closing curly bracket } to actually end the main function.<br></p>
+</article>
+<article>
+<h1>2-C++ Variables and Data types</h1>
+<p>Variables are containers for storing data values.<br>
+In C++, there are different types of variables (defined with different keywords), for example:<br>
+.int - stores integers (whole numbers), without decimals, such as 123 or -123<br>
+.double - stores floating point numbers, with decimals, such as 19.99 or -19.99<br>
+.char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes<br>
+.string - stores text, such as "Hello World". String values are surrounded by double quotes<br>
+.bool - stores values with two states: true or false</p>
+<bdi>
+int x = 5;<br>
+int y = 6;<br>
+int sum = x + y;<br>
+cout << sum;<br>
+</bdi>
+<p>in this example the output will be 11<br><strong>Note:</strong>The cout object is used together with the "<<" operator to display variables.</p>
+<article>
+<h2>Basic data types:</h2>
+<table>
+<tr>
+<th>Data Type</th>
+<th>Size</th>
+<th>Description<th>
+</tr>
+<tr>
+<td>int</td>
+<td>4 bytes</td>
+<td>stores whole numbers without decimals</td>
+</tr>
+<tr>
+<td>float</td>
+<td>4 bytes</td>
+<td>stores fractional numbers containing one or more decimals sufficient for storing 7 decimal digits</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8 bytes</td>
+<td>stores fractional numbers containing one or more decimals sufficient for storing 15 decimal digits</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>1 bytes</td>
+<td>stores true or false values</td>
+</tr>
+<tr>
+<td>char</td>
+<td>1 bytes</td>
+<td>stores a single character/letter/number,or ASCII values</td>
+</tr>
+</table>
+
+</article>
+<br>
+<br>
+<article>
+<h1>3-C++ Operators</h1>
+<h2>-Arithmetic Operators:</h2>
+<h3>Arithmetic operators are used to perform common mathematical operations.</h3>.
+<table>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>Adds two values together</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>Subtracts one value from another</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>Multiplies two values</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>Divides one value by another</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>Returns the division reminder</td>
+</tr>
+<tr>
+<td>++</td>
+<td>Increment</td>
+<td>Increases the value of a variable by 1</td>
+</tr>
+<tr>
+<td>--</td>
+<td>Decrement</td>
+<td>Decreases the value of a variable by 1</td>
+</tr>
+</table>
+<br>
+<h2>Logical operators<h2>
+<h3>Logical operators are used to determine the logic between variables or values:</h3>
+<table>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&&</td>
+<td>Logical and</td>
+<td>Returns true if both statements are true</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Logical or </td>
+<td>Returns true if one statement is true</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Logical not</td>
+<td>Reverse the result,returns false if the result is true</td>
+</tr>
+</table>
+<br>
+<h2>-Assignment Operators</h2>
+<br>
+<table>
+<tr>
+<th>Operator</th>	<th>Example</th>	<th>Same As</th>
+</tr>
+<tr>
+<td>=</td>	<td>x = 5</td>	<td>x = 5</td>	
+</tr>
+<tr>
+<td>+=</td>	<td>x += 3</td>	<td>x = x + 3</td>
+</tr>	
+<tr>
+<td>-=</td>	<td>x -= 3</td>	<td>x = x - 3</td>
+</tr>
+<tr>	
+<td>*=</td>	<td>x *= 3</td>	<td>x = x * 3</td>
+</tr>
+<tr>	
+<td>/=</td>	<td>x /= 3</td>	<td>x = x / 3</td>	
+</tr>
+<tr>
+<td>%=</td>	<td>x %= 3</td>	<td>x = x % 3</td>
+</tr>
+</table>
+<br>
+<h2>-Comparison Operators</h2>
+<br>
+<table>
+<tr>
+<th>Operator</th>	<th>Name</th>	<th>Example</th>	
+</tr>
+<tr>
+<td>==</td>	<td>Equal to</td>	<td>x == y</td>
+</tr>
+<tr>	
+<td>!=</td>	<td>Not equal</td>	<td>x != y</td>	
+</tr>
+<tr>
+<td>></td>	<td>Greater than</td>	<td>x > y</td>	
+</tr>
+<tr>
+<td><</td>	<td>Less than</td>	<td>x < y</td>	
+</tr>
+<tr>
+<td>>=</td>	<td>Greater than or equal to</td>	<td>x >= y</td>	
+</tr>
+<tr>
+<td><=</td>	<td>Less than or equal to</td>	<td>x <= y</td>
+</tr>
+</table>
+</article>
+<br>
+<br>
+<article>
+<h1>4-C++ conditions</h1>
+<p>C++ supports the usual logical conditions from mathematics:<br>
+Less than: a < b<br>
+Less than or equal to: a <= b <br>
+Greater than: a > b<br>
+Greater than or equal to: a >= b<br>
+Equal to a == b <br>
+Not Equal to: a != b<br>
+You can use these conditions to perform different actions for different decisions.</p>
+<br>
+<h2>-If Statement</h2>
+<h3>-Syntax</h3>
+<bdi>
+if (condition) {<br>
+  // block of code to be executed if the condition is true<br>
+}<br>
+</bdi>
+<h3>-Example</h3>
+<bdi>
+if (20 > 18) { <br>
+  cout << "20 is greater than 18"; <br>
+}<br>
+</bdi>
+<h2>-Else Statement</h2>
+<h3>-Syntax</h3>
+<bdi>
+if (condition) { <br>
+  // block of code to be executed if the condition is true<br>
+} else { <br>
+  // block of code to be executed if the condition is false <br>
+} <br>
+</bdi>
+<h3>Example</h3>
+<bdi>
+int time = 20;<br>
+if (time < 18) {<br>
+  cout << "Good day.";<br>
+} else {<br>
+  cout << "Good evening.";<br>
+}<br>
+// Outputs "Good evening."<br>
+</bdi>
+<h3>-Else if Statment</h3>
+<h3>-Syntax</h3>
+<bdi>
+if (condition1) {<br>
+  // block of code to be executed if condition1 is true<br>
+} else if (condition2) {<br>
+  // block of code to be executed if the condition1 is false and condition2 is true<br>
+} else {<br>
+  // block of code to be executed if the condition1 is false and condition2 is false<br>
+}<br>
+</bdi>
+<h3>-Example</h3>
+<bdi>
+int time = 22;<br>
+if (time < 10) {<br>
+  cout << "Good morning.";<br>
+} else if (time < 20) {<br>
+  cout << "Good day.";<br>
+} else {<br>
+  cout << "Good evening.";<br>
+}<br>
+// Outputs "Good evening<br>
+</bdi>
+<br>
+<br>
+<h1>switch Statement</h1>
+<p>This is how it works:<br>
+The switch expression is evaluated once<br>
+The value of the expression is compared with the values of each case<br>
+If there is a match, the associated block of code is executed<br>
+The break and default keywords are optional, and will be described later in this chapter</p>
+<h3>Syntax</h3>
+<bdi>
+switch(expression) { <br>
+  case x:<br>
+    // code block<br>
+    break;<br>
+  case y:<br>
+    // code block<br>
+    break;<br>
+  default:<br>
+    // code block<br>
+}<br>
+</bdi>
+<h3>Example</h3>
+<bdi>
+int day = 4;<br>
+switch (day) {<br>
+  case 1:<br>
+    cout << "Monday";<br>
+    break;<br>
+  case 2:<br>
+    cout << "Tuesday";<br>
+    break;<br>
+  case 3:<br>
+    cout << "Wednesday";<br>
+    break;<br>
+  case 4:<br>
+    cout << "Thursday";<br>
+    break;<br>
+  case 5:<br>
+    cout << "Friday";<br>
+    break;<br>
+  case 6:<br>
+    cout << "Saturday";<br>
+    break;<br>
+  case 7:<br>
+    cout << "Sunday";<br>
+    break;<br>
+}<br>
+// Outputs "Thursday" (day 4)<br>
+</bdi>
+</article>
+<article>
+<h1>QUIZZ</h1>
+<h2>-choose the missing parts of the codes below<h2>
+<bdi>
+1- int main(){<br>
+...<<"Hello world";<br>
+return 0;<br>
+}<br>
+</bdi>
+<form onsubmit="return check1()">
+   <input type="radio" id="reading2">
+   print<br>
+
+   
+
+    
+    <input type="radio" id="reading1">
+	cout<br>	
+
+	
+
+    
+    <input type="submit" value="submit" class="button">
+	<br>
+   </form>
+   <br>
+   <br>
+<bdi>
+2- int x = 50;<br>
+int y = 50;<br>
+...(x...y){<br>
+cout<<"Hello world";<br>
+} <br>
+print hello world if x equal y<br>
+</bdi>
+<form onsubmit=" return check2()">
+   <input type="radio" id="reading3">
+   if == <br>
+
+   
+
+    
+    <input type="radio" id="reading4">
+	if = <br>
+
+	
+
+    
+    <input type="submit" value="submit" class="button">
+	<br>
+	<br>
+   </form>
+<bdi>
+3- ... x=5...y=6...z=50;<br>
+cout<< x+y+z ;<br>
+<br>
+</bdi>
+<form onsubmit="return check3()">
+   <input type="radio" id="reading5">
+   int , ,<br>
+
+   
+
+    
+    <input type="radio" id="reading6">
+	int ; ;<br>
+
+	
+
+    
+    <input type="submit" value="submit" class="button">
+   </form>
+   <br>
+   <br>
+ <bdi>
+4- int day =4;<br>
+swich(day){<br>
+... 1:<br>
+cout<<"saturday";<br>
+break;<br>
+... 4:<br>
+cout<<"tuesday";<br>
+break;<br>
+}<br>
+</bdi>
+<form onsubmit="return check4()">
+   <input type="radio" id="reading8">
+   if<br>
+
+   
+
+    
+    <input type="radio" id="reading7">
+	case<br>
+
+	
+
+    
+    <input type="submit" value="submit" class="button">
+   </form>
+   <br>
+
+
+
+
+
+
+
+
+</article>
+<footer style="color:white">
+<label for="file">Your Progress</label>
+<br>
+<progress id="file" value="25" max="100">25%</progress>
+</footer>
+</article>
+</main>
+</body>
+
+<style type="text/css">
+  aside {
+  width: 12%;
+  padding-left: 5px;
+  padding-top:0px;
+  margin-left: 5px;
+  margin-top:5px;
+  margin-bottom:0px;
+  float: right;
+  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+}
+td, th {
+  border: 1px solid lightgray;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+h1{
+font-size:30px;
+color:white;
+}
+h2{
+font-size:30px;
+color:white;
+}
+h3{
+font-size:30px;
+color:white;
+}
+p{
+color:white;
+font-size:27px;
+}
+bdi{
+color:yellow;
+font-size:30px;
+}
+body{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('All.jpg'); 
+  }
+  progress{
+    width: 40%;
+    height: 100px;
+    margin: 0 30%;
+  }
+  label{
+    font-size: 35px;
+  }
+</style>
+</html>

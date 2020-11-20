@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" >
+     function  check1(){  
+
+        if (document.getElementById('reading1').checked){
+            if (document.getElementById('reading2').checked){
+               alert("Wrong answer");
+               document.getElementById('reading1').checked = 0 ;
+               document.getElementById('reading2').checked = 0 ;
+            }
+            else{
+            alert("True answer");
+             document.getElementById('reading1').checked = 0 ;
+             document.getElementById('reading2').checked = 0 ;
+          }
+        }
+        else{
+          alert("Wrong answer");
+          document.getElementById('reading1').checked = 0 ;
+          document.getElementById('reading2').checked = 0 ;
+        }
+        return false ;
+      }
+      function  check2(){    
+        if (document.getElementById('reading4').checked){
+            if (document.getElementById('reading3').checked){
+               alert("Wrong answer");
+               document.getElementById('reading3').checked = 0 ;
+              document.getElementById('reading4').checked = 0 ;
+            }
+            else{
+            alert("True answer");
+            document.getElementById('reading3').checked = 0 ;
+              document.getElementById('reading4').checked = 0 ;
+          }
+        }
+        else{
+          alert("Wrong answer");
+          document.getElementById('reading3').checked = 0 ;
+              document.getElementById('reading4').checked = 0 ;
+        }
+        return false;
+      }
+      function check3(){
+      var trueAnswer = "0 1 2 3";
+        var answer = document.forms[3].elements[0].value;
+           if (answer == trueAnswer){
+                 alert("True answer");
+            }
+            else{
+              alert("Wrong answer");
+            }
+            return false;
+      }
+      function check4(){
+      var trueAnswer = "2";
+        var answer = document.forms[4].elements[0].value;
+           if (answer == trueAnswer){
+                 alert("True answer");
+            }
+            else{
+              alert("Wrong answer");
+            }
+            return false;
+      }
+    </script>
+	
+	<title>
+		 Level 2
+	</title>
+	</head>
+	<body>
+	
+	<form>
+<input type="submit" value="Home" formaction="Home.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-left: 1250px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+		<input type="submit" value="Log Out" formaction="start.html" style= "position: absolute; width: 12%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-left: 1050px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+        <input type="submit" value="Level 3 --->" formaction="Level3.html" style= "position: absolute; width: 17%;
+        background: linear-gradient(to right,#7FE174,#FFFF00);
+        color:black;
+        padding: 10px 30px;
+        margin-top: 12300px;
+        margin-left: 1130px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer; "/>
+</form>
+	
+	<h1  align="center">Loops, Break and Continue, Arrays </h1>
+     
+
+   <h2 class="head">Loops</h2>
+   <ul>
+   	<li> What do we need to do? (body)</li>
+   	<li> How many times do we need to repeat it? (expression)</li>
+   </ul>
+   <h3 class="head">While Loops, Declaration</h3>
+   <p>while (boolean expression) { <br>
+          // code to be executed <br>
+        }
+   </p>
+   <h4 class="head"> How it works</h4>
+   <img src="1.PNG">
+   <h5 class="head">Quiz</h5>
+   <p  id = 'question'> </p>
+   <script type="text/javascript">
+        if (localStorage.getItem("fifth_value")!== null){
+        document.getElementById('question').innerHTML = localStorage.getItem("fifth_value");}
+        else{
+          document.getElementById('question').innerHTML = "Now can you print all numbers from 1 to 9?";
+        }
+      </script>
+   <form onsubmit="return check1()">
+   <input type="radio" id="reading1">
+   <p id = 'question2'> <br> </p>
+  <script type="text/javascript">
+        if (localStorage.getItem("sixth_value")!== null){
+        document.getElementById('question2').innerHTML = localStorage.getItem("sixth_value");}
+        else{
+          document.getElementById('question2').innerHTML = "int x =1;<br>while (x&lt;=9){<br> cout &lt;&lt; x &lt;&lt; endl ; <br> x++; <br>} <br> ";
+        }
+      </script>
+    <input type="radio" id="reading2">
+    <p id = 'question3'> <br> </p>
+  <script type="text/javascript">
+        if (localStorage.getItem("seventh_value")!== null){
+        document.getElementById('question3').innerHTML = localStorage.getItem("seventh_value");}
+        else{
+          document.getElementById('question3').innerHTML = "int x =1;<br> while (x&lt;=9){<br> cout &lt;&lt; x &lt;&lt; endl ; <br> }<br> <br> ";
+        }
+      </script>
+    <input type="submit" value="submit" class="button">
+   </form> 
+    <p><br> <br></p>
+
+   <h6 class="head"> Do .... While loop </h6>
+   <p>The body of do while loop is executed <br>
+    once before the condition is checked. </p>
+   	<img src="2.PNG">
+    <p>do{<br>
+    	//code to be executed <br>
+    } while(boolean expression); <br> <br>
+    </p>
+     <h21 class="head">Quiz</h21>
+    <form onsubmit="return check2()">
+   <input type="radio" id="reading3">
+    int x =1;<br>
+    <p>
+    do{<br>
+     cout &lt;&lt; x &lt;&lt; endl ; <br>
+     x++; <br>
+    }while (x&lt;=9)<br>
+    </p>
+    <input type="radio" id="reading4">
+    int x =1;<br>
+    <p>
+   	do{<br>
+     cout &lt;&lt; x &lt;&lt; endl ; <br>
+    }while (x&lt;=9);<br> <br>
+    </p>
+    <input type="submit" value="submit" class="button">
+   </form>
+   <p><br></p>
+   <h7 class="head">While Vs Do while</h7>
+   <p><br></p>
+   <img src="3.PNG">
+   <p><br>  </p>
+   <h8 class="head">For Loop</h8>
+   <p>
+   	for(initialization; condition ; increament/decreament){ <br>
+     // statement(s); <br>
+    }<br>
+    Note: if the statement is one line, you can write it without curly brackets <br>  
+   </p>
+   <h9 class="head">Quiz</h9>
+   <p>
+   	What is the output? <br>
+   	for(int i =0 ; i &lt;=3 ; i++)<br>
+    cout &lt;&lt;&lt; i &lt;&lt;" "; <br> <br>
+   </p>
+   <form onsubmit="return check3()">
+   <input type="text" name="text1" class="inputText">
+   <input type="submit" value="submit" class="button">
+   </form>
+   <p><br> <br></p>
+   <h10 class="head"> Nested Loops</h10>
+   <p>
+   	for(initialization; condition ; increament/decreament){ <br>
+   		for(initialization; condition ; increament/decreament){ <br>
+               // statement(s); <br>
+        } <br>       
+    }<br>
+   </p>
+   <h11 class="head">Break</h11>
+   <p>
+   	Break statement is used to end <br>
+    execution of the nearest loop that the <br>
+    break statement lies in.<br>
+    Example: <br>
+   </p>
+   <img src="4.PNG">
+   <p><br></p>
+   <h12 class="head">Continue</h12>
+   <p>
+   	Continue statement is used to pass the<br>
+    section of code underneath it and<br>
+     make a shortcut to the next iteration of<br>
+    the loop.<br>
+    Example: <br>
+   </p>
+   <img src="5.PNG">
+   <p><br></p>
+   <h13 class="head">Arrays</h13>
+   <p>Data_Type Array_name[size];</p>
+   <img src="6.PNG">
+   <p>You can initialize the array in
+     different ways.<br> </p>
+    <img src="7.PNG">
+    <p><br></p>
+    <img src="8.PNG">
+    <p><br></p>
+    <h14 class="head">Filling Array</h14>
+     <p><br></p>
+    <img src="9.PNG">
+        <p><br></p>
+    <h15 class="head">Displaying Array</h15>
+        <p><br></p>
+    <img src="10.PNG">
+        <p><br></p>
+    <h16 class="head">Quiz</h16>
+    <p>What is the output if N=10 <br> </p>
+    <img src="11.PNG">
+     <p><br></p>
+    <form onsubmit="return check4()">
+    <input type="text" name="text2" class="inputText">
+    <input type="submit" value="submit" class="button">
+    </form> 
+    <p><br> <br></p>
+    <h17 class="head">Char Array</h17>
+     <p><br></p>
+    <img src="12.PNG">
+     <p><br></p>
+    <h18 class="head">How to fill and display </h18>
+    <p>
+    	● You can cin the char array and <br>
+        cout it like a normal variable. <br>
+        ● You can access its elements by <br>
+        index like an array <br>
+    </p>
+    <img src="13.PNG">	
+     <p><br></p>
+    <h19 class="head"> Multi-dimensional array </h19>
+     <p><br></p>
+    <img src="14.PNG">
+     <p><br></p>
+    <p>
+    	DataType name [size1]; <br>
+        DataType name [size1][size2]; <br>
+        DataType name [size1][size2][size3];<br>
+        .<br>
+        .<br>
+        .<br>
+        DataType name [size1][size2]...[size n];<br>
+    </p>
+    <h20 class="head">Inilization of 2D array</h20>
+    <p><br></p>
+    <img src="15.PNG">
+    <p> <br> <br> </p>
+    <style type="text/css">
+    	.head {
+    		font-size: 35px;
+    		text-decoration-style:solid;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 3%;
+    	}
+    	p{
+    		font-size: 27px;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 7%;
+    	}
+    	ul{
+    		font-size: 27px;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 7%;
+    	}
+      img{
+         margin-left: 7%;
+      }
+      input{
+         margin-left: 7%;
+      }
+      .button{
+        width: 170px;
+        height: 40px;
+      }
+      .inputText{
+        height:40px;
+        padding: 5px 0px 5px 5px;
+        border-radius: 4px;
+      }
+    	form{
+    		font-size: 27px;
+        color: #ffffff;
+        text-align: left;
+    	}
+      body{
+       background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('All.jpg');
+            background-color: #cccccc; /* Used if the image is unavailable */
+            color: #ffffff;
+      }
+    </style>
+
+</body>
+</html>

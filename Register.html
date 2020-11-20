@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateform(){
+var valid=true;
+if(document.inputForm.Firstname.value==""){
+alert("Please enter your first name");
+document.inputForm.Firstname.focus();
+valid=false;
+}
+else if(document.inputForm.Lastname.value==""){
+alert("Please enter your last name");
+document.inputForm.lastname.focus();
+valid=false;
+}
+else if(document.inputForm.email.value==""){
+alert("Please enter your email");
+document.inputForm.email.focus();
+valid=false;
+}
+else if(document.inputForm.birthday.value==""){
+alert("Please enter your date of birth");
+document.inputForm.birthday.focus();
+valid=false;
+}
+else if(document.inputForm.pwd.value==""){
+alert("Please enter your password");
+document.inputForm.pwd.focus();
+valid=false;
+}
+else if (document.inputForm.email.value.indexOf("@")==-1||document.inputForm.email.value.indexOf(".")==-1){
+alert("Please enter a valid email");
+document.inputForm.email.focus();
+valid=false;
+}
+if (valid == true){
+	window.open("Home.html");
+	window.close();
+}
+return valid;
+}
+
+</script>
+</head>
+<body>
+<form class = "form" name="inputForm" onsubmit="return validateform()">
+	<h1> Register </h1>
+	 <p> <hr> </p>
+ <input type="text" name="Firstname" class = "text" placeholder="First name">
+ <input type="text" name="Lastname"  class = "text" placeholder="Last name">
+<input type="text" name="email"  class = "text" placeholder="Email">
+ <input type="password" name="pwd" minlength="8"  class = "text" placeholder="Password">
+<input type="date" name="birthday"  class = "text" placeholder="Birthday">
+<input type="submit"  class = "button">
+</form>
+</body>
+<style type="text/css">
+     h1{
+      text-align:center; 
+      color: #56E446;
+     }
+     p{
+      width: 30%;
+      margin-right: 30%;
+      margin-left: 30%;
+     }
+      .button{
+        width: 85%;
+        background: linear-gradient(to right,#7FE174,#36E321);
+        color:white;
+        padding: 10px 30px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align:center;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+      }
+       .text{
+           width: 80%;
+           margin-right:10%; 
+           margin-left:10%;
+           margin-top: 20px;
+           padding: 12px 0px ;
+           margin-top: 40px;
+           border-bottom: 1px solid #999;
+           border-right: 0px;
+           border-left: 0px;
+           border-top:0px;
+           background:transparent;
+      }
+      .form {
+        width:30%; 
+        height: 70%;   
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px;
+        margin-right:35%;
+        margin-left: 35%;
+        margin-top: 7%;
+      }
+      body{ 
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Home.jpg');
+            background-color: #cccccc; /* Used if the image is unavailable */
+      }
+</style>
+</html>
